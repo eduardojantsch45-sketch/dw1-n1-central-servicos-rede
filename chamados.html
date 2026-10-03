@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Pagina Inicial</title>
+    <link
+      rel="stylesheet"
+      href="./css/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/chamados.css"
+    />
+  </head>
+
+  <body>
+    <header class="menu">
+      <div class="cabecalho">
+        <h1>CENTRAL DE SERVIÇOS DE REDES</h1>
+        <p>Ajudamos com Conectividade, Segurança e Suporte técnico</p>
+      </div>
+      <div class="navegacao">
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Início</a>
+            </li>
+            <li>
+              <a href="#">Chamados</a>
+            </li>
+            <li>
+              <a href="./abrir-chamado.html">Abrir chamado</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>Visão Geral dos Chamados</h2>
+        <div class="abertos">
+          <h3>Abertos</h3>
+          <p>6</p>
+        </div>
+        <div class="pendentes">
+          <h3>Pendentes</h3>
+          <p>3</p>
+        </div>
+        <div class="concluidos">
+          <h3>Concluídos</h3>
+          <p>12</p>
+        </div>
+      </section>
+      <section>
+        <h2>Pesquisar Chamados</h2>
+        <form>
+          <div class="filtros">
+            <label for="pesquisa">Palavra-chave</label>
+            <input
+              type="text"
+              id="pesquisa"
+              name="pesquisa"
+              placeholder="Internet, Wi-Fi ou Segurança"
+            />
+          </div>
+          <div class="filtros">
+            <label for="categoria">categoria</label>
+            <select
+              id="categoria"
+              name="categoria"
+            >
+              <option value="">Selecione uma categoria</option>
+              <option value="conectividade">Conectividade</option>
+              <option value="seguranca">Segurança</option>
+              <option value="suporte">Rede</option>
+            </select>
+          </div>
+          <div class="filtros">
+            <label for="prioridade">Prioridade</label>
+            <select
+              id="prioridade"
+              name="prioridade"
+            >
+              <option value="">Selecione uma prioridade</option>
+              <option value="baixa">Baixa</option>
+              <option value="media">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+          <div class="filtros">
+            <label for="status">Status</label>
+            <select
+              id="status"
+              name="status"
+            >
+              <option value="">Selecione um status</option>
+              <option value="aberto">Aberto</option>
+              <option value="pendente">Pendente</option>
+              <option value="concluido">Concluído</option>
+            </select>
+          </div>
+          <div class="filtros">
+            <label for="data-inicial">Data inicial</label>
+            <input
+              type="date"
+              id="data-inicial"
+              name="data-inicial"
+            />
+          </div>
+          <div class="filtros">
+            <label for="data-final">Data final</label>
+            <input
+              type="date"
+              id="data-final"
+              name="data-final"
+            />
+          </div>
+          <div class="filtros">
+            <label for="time">Horário</label>
+            <input
+              type="datetime"
+              id="time"
+              name="time"
+            />
+          </div>
+          <button
+            class="enviar"
+            type="submit"
+          >
+            Pesquisar
+          </button>
+          <button
+            class="limpar"
+            type="reset"
+          >
+            Limpar Filtros
+          </button>
+        </form>
+      </section>
+      <section>
+        <h2>Chamados encontrados</h2>
+        <p>Situações cadastradas na central de serviços</p>
+        <article class="chamado">
+          <p class="chamado-id">Chamado 001</p>
+          <h3>Laboratorio sem acesso à internet</h3>
+          <p>Rede - Prioridade Alta - Maria da Silva - 02/10/2026 às 19h30</p>
+          <p class="status">Aberto</p>
+        </article>
+        <article class="chamado">
+          <p class="chamado-id">Chamado 002</p>
+          <h3>Atualização do antivírus</h3>
+          <p>
+            Segurança - Prioridade Média - João Pereira - 01/10/2026 às 14h10
+          </p>
+          <p class="status">Pendente</p>
+        </article>
+
+        <article class="chamado">
+          <p class="chamado-id">Chamado 003</p>
+          <h3>Computador sem acesso à rede</h3>
+          <p>
+            Conectividade - Prioridade Alta - Carlos Mendes - 01/10/2026 às
+            10h45
+          </p>
+          <p class="status">Aberto</p>
+        </article>
+
+        <article class="chamado">
+          <p class="chamado-id">Chamado 004</p>
+          <h3>Configuração de novo ponto de rede</h3>
+          <p>Rede - Prioridade Baixa - Ana Oliveira - 30/09/2026 às 16h20</p>
+          <p class="status">Concluído</p>
+        </article>
+
+        <article class="chamado">
+          <p class="chamado-id">Chamado 005</p>
+          <h3>Wi-Fi com conexão instável</h3>
+          <p>
+            Conectividade - Prioridade Média - Pedro Santos - 30/09/2026 às
+            09h15
+          </p>
+          <p class="status">Pendente</p>
+        </article>
+
+        <article class="chamado">
+          <p class="chamado-id">Chamado 006</p>
+          <h3>Bloqueio de acesso não autorizado</h3>
+          <p>
+            Segurança - Prioridade Alta - Juliana Costa - 29/09/2026 às 13h40
+          </p>
+          <p class="status">Concluído</p>
+        </article>
+      </section>
+    </main>
+    <footer class="rodape">
+      <p>
+        Carlos Eduardo Romero Jantsch - Desenvolvimento WEB I - Instituto
+        Federal Catarinense - Campus Araquari
+      </p>
+    </footer>
+  </body>
+</html>

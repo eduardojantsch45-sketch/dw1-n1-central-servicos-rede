@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Pagina Inicial</title>
+    <link
+      rel="stylesheet"
+      href="./css/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/abrir-chamado.css"
+    />
+  </head>
+
+  <body>
+    <header class="menu">
+      <div class="cabecalho">
+        <h1>CENTRAL DE SERVIÇOS DE REDES</h1>
+        <p>Ajudamos com Conectividade, Segurança e Suporte técnico</p>
+      </div>
+      <div class="navegacao">
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Início</a>
+            </li>
+            <li>
+              <a href="./chamados.html">Chamados</a>
+            </li>
+            <li>
+              <a href="#">Abrir chamado</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="abrir-chamado">
+        <p class="titulo">ABERTURA DE SOLICITAÇÃO</p>
+        <h2>Abrir novo chamado</h2>
+        <p>campos marcados com * são obrigatórios.</p>
+        <article class="usuario">
+          <h3>Dados do solicitante</h3>
+          <form>
+            <div class="campo">
+              <label for="nome">Nome completo *</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="tel">Telefone</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                maxlength="15"
+              />
+            </div>
+            <div class="campo">
+              <label for="data-hora">Data e hora da ocorrência</label>
+              <input
+                type="datetime"
+                id="data-hora"
+                name="data-hora"
+              />
+            </div>
+          </form>
+        </article>
+        <article class="chamado">
+          <h3>Informações do chamado</h3>
+          <form>
+            <div class="campo">
+              <label for="categoria">Categoria *</label>
+              <select
+                id="categoria"
+                name="categoria"
+                required
+              >
+                <option value="">Selecione uma categoria</option>
+                <option value="redes">Redes</option>
+                <option value="seguranca">Segurança</option>
+                <option value="suporte">Suporte técnico</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="prioridade">Prioridade *</label>
+              <select
+                id="prioridade"
+                name="prioridade"
+                required
+              >
+                <option value="">Selecione uma prioridade</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="anexo">Anexo</label>
+              <input
+                type="file"
+                id="anexo"
+                name="anexo"
+              />
+            </div>
+            <div class="campo">
+              <label for="descricao">Descrição do problema *</label>
+              <textarea
+                id="descricao"
+                name="descricao"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="campo">
+              <p>Equipamentos ou serviços afetados</p>
+              <div>
+                <label for="computador">Computador</label>
+                <input
+                  type="checkbox"
+                  id="computador"
+                  name="equipamento"
+                  value="computador"
+                />
+                <label for="impressora">Impressora</label>
+                <input
+                  type="checkbox"
+                  id="impressora"
+                  name="equipamento"
+                  value="impressora"
+                />
+                <label for="rede">Rede</label>
+                <input
+                  type="checkbox"
+                  id="rede"
+                  name="equipamento"
+                  value="rede"
+                />
+                <label for="sistema">Sistema</label>
+                <input
+                  type="checkbox"
+                  id="sistema"
+                  name="equipamento"
+                  value="sistema"
+                />
+              </div>
+            </div>
+            <div class="check">
+              <label for="localizacao">Confirmo que as informações fornecidas são verdadeiras *</label>
+              <input
+                type="checkbox"
+                id="localizacao"
+                name="confirmacao"
+                required
+              />
+            </div>
+            <div class="botoes">
+              <button
+                class="limpar"
+                type="reset"
+              >
+                Limpar
+              </button>
+              <button
+                class="enviar"
+                type="submit"
+              >
+                Enviar
+              </button>
+          </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>
+        Carlos Eduardo Romero Jantsch - Desenvolvimento WEB I - Instituto
+        Federal Catarinense - Campus Araquari
+      </p>
+    </footer>
+  </body>
+</html>

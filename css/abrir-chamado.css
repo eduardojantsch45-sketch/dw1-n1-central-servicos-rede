@@ -1,0 +1,158 @@
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.abrir-chamado .titulo {
+  color: #506786;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.abrir-chamado > h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.abrir-chamado > h2 + p {
+  color: #667386;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.usuario,
+.chamado {
+  background-color: #f9fbfd;
+  padding: 20px 40px;
+  border-left: 1px solid #aebaca;
+  border-right: 1px solid #aebaca;
+}
+
+.usuario {
+  border-top: 1px solid #aebaca;
+  border-radius: 10px 10px 0 0;
+}
+
+.chamado {
+  border-bottom: 1px solid #aebaca;
+  border-radius: 0 0 10px 10px;
+}
+
+.usuario h3,
+.chamado h3 {
+  color: #173f82;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.usuario form {
+  border-bottom: 1px solid #aebaca;
+  padding-bottom: 20px;
+}
+
+.usuario form,
+.chamado form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 40%;
+  gap: 0.4rem;
+}
+
+.campo label,
+.campo p {
+  color: #59697d;
+  font-size: 0.8rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  border: 1px solid #b8c2ce;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+.campo div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.campo div input {
+  width: auto;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  gap: 0.5rem;
+}
+
+.check label {
+  color: #59697d;
+  font-size: 0.8rem;
+}
+
+.check input {
+  width: auto;
+}
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 100%;
+  gap: 1rem;
+}
+
+.limpar {
+  border: none;
+  border-radius: 5px;
+  background-color: #e4eaf2;
+  color: #25364d;
+  padding: 10px 40px;
+  font-weight: bold;
+}
+
+.enviar {
+  border: none;
+  border-radius: 5px;
+  background-color: #173f82;
+  color: #fff;
+  padding: 10px 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 780px) {
+  .usuario,
+  .chamado {
+    padding: 20px;
+  }
+
+  .campo {
+    flex-basis: 100%;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+
+  .limpar,
+  .enviar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,60 @@
+main {
+  padding: 2rem;
+}
+
+.apresentacao {
+  display: flex;
+  border: 1px solid #b3d9e8;
+  border-radius: 20px;
+  background-color: #e7f8ff;
+  padding: 2rem;
+}
+.apresentacao h3 {
+  color: #50555b;
+  margin-bottom: 10px;
+}
+.apresentacao h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.servicos h2 {
+  flex-basis: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.servico {
+  flex: 1 1 180px;
+  overflow: hidden;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  box-shadow: 0 5px 12px rgb(0, 0, 0.812);
+}
+.servico figure {
+  margin: 0;
+}
+.servico img {
+  border: 1px solid #d8d8d8;
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.descricao {
+  padding: 1.25rem;
+}
+.descricao h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.descricao p {
+  line-height: 1.6;
+}

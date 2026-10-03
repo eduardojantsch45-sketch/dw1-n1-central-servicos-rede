@@ -6,24 +6,131 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Projeto HTML e CSS</title>
+    <title>Pagina Inicial</title>
     <link
       rel="stylesheet"
       href="./css/global.css"
     />
+    <link
+      rel="stylesheet"
+      href="./css/index.css"
+    />
   </head>
 
   <body>
-    <header>
-      <h1>Projeto HTML e CSS</h1>
+    <header class="menu">
+      <div class="cabecalho">
+        <h1>CENTRAL DE SERVIÇOS DE REDES</h1>
+        <p>Ajudamos com Conectividade, Segurança e Suporte técnico</p>
+      </div>
+      <div class="navegacao">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Início</a>
+            </li>
+            <li>
+              <a href="./chamados.html">Chamados</a>
+            </li>
+            <li>
+              <a href="./abrir-chamado.html">Abrir chamado</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <p>Substitua este conteúdo pelo conteúdo do seu projeto.</p>
+      <section class="apresentacao">
+        <header>
+          <h3>SEÇÃO DE APRESENTAÇÃO</h3>
+          <h2>Soluções para manter sua rede conectada</h2>
+          <p>
+            Oferecemos serviços especializados em instalação, configuração,
+            manutenção e segurança de redes, garantindo conectividade e
+            estabilidade para sua infraestrutura.
+          </p>
+        </header>
+        <div>
+          <button type="submit">Solicitar Suporte</button>
+        </div>
+      </section>
+      <section class="servicos">
+        <h2>Serviços Disponíveis</h2>
+        <article class="servico">
+          <figure>
+            <img
+              src="./img/configuracao-de-redes.png"
+              alt="Imagem de configuração de redes"
+            />
+          </figure>
+          <div class="descricao">
+            <p class="categoria">REDES</p>
+            <h3>Configuração de redes</h3>
+            <p>
+              Instalação e configuração de roteadores, switches e redes locais.
+            </p>
+            <a href="./abrir-chamado.html">Solicitar atendimento</a>
+          </div>
+        </article>
+        <article class="servico">
+          <figure>
+            <img
+              src="./img/suporte-tecnico.png"
+              alt="Imagem de suporte técnico"
+            />
+          </figure>
+          <div class="descricao">
+            <p class="categoria">SUPORTE</p>
+            <h3>Suporte técnico</h3>
+            <p>
+              Diagnóstico e solução de falhas de conexão e equipamentos de rede.
+            </p>
+            <a href="./abrir-chamado.html">Solicitar atendimento</a>
+          </div>
+        </article>
+        <article class="servico">
+          <figure>
+            <img
+              src="./img/seguranca-de-redes.png"
+              alt="Imagem de segurança de redes"
+            />
+          </figure>
+          <div class="descricao">
+            <p class="categoria">SEGURANÇA</p>
+            <h3>Segurança de redes</h3>
+            <p>
+              Configuração de firewall, controle de acesso e proteção da
+              infraestrutura.
+            </p>
+            <a href="./abrir-chamado.html">Solicitar atendimento</a>
+          </div>
+        </article>
+        <article class="servico">
+          <figure>
+            <img
+              src="./img/monitoramento-de-redes.png"
+              alt="Imagem de monitoramento de redes"
+            />
+          </figure>
+          <div class="descricao">
+            <p class="categoria">MONITORAMENTO</p>
+            <h3>Monitoramento de redes</h3>
+            <p>
+              Acompanhamento da rede para identificar falhas e problemas de
+              desempenho.
+            </p>
+            <a href="./abrir-chamado.html">Solicitar atendimento</a>
+          </div>
+        </article>
+      </section>
     </main>
 
-    <footer>
-      <p>Desenvolvido durante as aulas de Desenvolvimento Web.</p>
+    <footer class="rodape">
+      <p>
+        Carlos Eduardo Romero Jantsch - Desenvolvimento WEB I - Instituto
+        Federal Catarinense - Campus Araquari
+      </p>
     </footer>
   </body>
 </html>
